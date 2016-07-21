@@ -184,7 +184,7 @@
                             "from": {
                                 "kind": "ImageStreamTag",
                                 "namespace": "openshift",
-                                "name": "rocket.chat:latest"
+                                "name": "rocket-chat:latest"
                             }
                         }
                     }
@@ -217,7 +217,7 @@
                         "containers": [
                             {
                                 "name": "rocketchat",
-                                "image": "172.30.19.110:5000/openshift/rocket.chat@sha256:0cb778a504334142a411ecf6ea6ab23ba02e64eb2591a5833e4b1745361645ca",
+                                "image": "172.30.19.110:5000/openshift/rocket-chat@sha256:0cb778a504334142a411ecf6ea6ab23ba02e64eb2591a5833e4b1745361645ca",
                                 "ports": [
                                     {
                                         "containerPort": 3000,
