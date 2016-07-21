@@ -14,7 +14,7 @@
     },
     "spec": {},
     "status": {
-        "dockerImageRepository": "172.30.19.110:5000/openshift/rocket.chat",
+        "dockerImageRepository": "hub.openshift.rhel-cdk.10.1.2.2.xip.io/openshift/rocket.chat",
         "tags": [
             {
                 "tag": "latest",
