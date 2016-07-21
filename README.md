@@ -24,14 +24,14 @@ Installation on Container Development Kit(CDK)
 
 * Login in OpenShift and create a new project in OpenShift
 
-```
+```bash
 # oc login -u openshift-devel https://10.1.2.2:8443
 # oc new-project rocket-chat
 ```
 
 * Clone this repo and add the templates and ImageStream to openshift namespace:
 
-```
+```bash
 # git clone https://github.com/rimolive/rocketchat-openshift
 # oc create -n openshift -f rocket-chat-is.json
 # oc create -n openshift -f rocket-chat-ephemeral.json
@@ -39,13 +39,13 @@ Installation on Container Development Kit(CDK)
 
 * Create the rocket-chat app:
 
-```
+```bash
 # oc new-app rocket-chat -p MONGODB_DATABASE=rocketchat,MONGODB_USER=rocketchat-admin,MONGODB_PASS=rocketchat
 ```
 
 * Rocket.Chat uses a domain check code to verify the validity of the e-mail address. To disable it, run the following commands:
 
-```
+```bash
 # oc port-forward <mongodb_pod> 27017
 # mongo localhost:27017
 
